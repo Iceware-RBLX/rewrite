@@ -1,0 +1,59 @@
+--[[
+
+ ,,                                          
+  db                                          
+                                              
+`7MM `7M'    ,A    `MF'    `7M'   `MF'pd*"*b. 
+  MM   VA   ,VAA   ,V        VA   ,V (O)   j8 
+  MM    VA ,V  VA ,V          VA ,V      ,;j9 
+  MM     VVV    VVV            VVV    ,-='    
+.JMML.    W      W              W    Ammmmmmm 
+                                                     
+]]
+
+cloneref = cloneref or function(x) return x end
+
+-- No, i will not make variables for services..
+repeat task.wait() until game:IsLoaded() and cloneref(game:GetService("ContentProvider")).RequestQueueSize <= 10
+
+cloneref(game:GetService("Players")).LocalPlayer.Idled:Connect(function()
+    cloneref(game:GetService("VirtualUser")):ClickButton2(Vector2.new())
+end)
+
+if readfile("IceWare/Version.txt") == "V1.0.0" then
+    delfolder("IceWare")
+end
+
+local shared = {
+    version = "V2.0.0",
+    folders = {
+        main = 'IceWare',
+        games = 'IceWare/Games',
+    };
+}
+
+for _, folder in next, shared.folders do
+    if not isfolder(folder) then
+        makefolder(folder)
+    end
+end
+
+writefile("IceWare/Discord.txt", "https://discord.gg/sn2Etx6M8G")
+writefile("IceWare/Version.txt", shared.version)
+
+local games = {
+    [{13822562292, 139048751758942, 133327835421432, 121510074321001}] = "https://raw.githubusercontent.com/Iceware-RBLX/Roblox/refs/heads/main/Games/MidnightChasers/Main.lua", -- Midnight Chasers
+    [{3351674303, 71775212858107}] = "https://raw.githubusercontent.com/Iceware-RBLX/Roblox/refs/heads/main/Games/DrivingEmpire/Main.lua", -- Driving Empire
+    [{1554960397}] = "https://raw.githubusercontent.com/Iceware-RBLX/Roblox/refs/heads/main/Games/CDT/Main.lua", -- Car Dealership Tycoon
+}
+
+for ids, url in next, games do
+    if table.find(ids, game.PlaceId) then
+        local ok, err = pcall(function()
+            loadstring(game:HttpGet(url))()
+        end)
+        if not ok then
+            --warn("Failed 2 load" .. err) -- fuck u
+        end
+    end
+end
