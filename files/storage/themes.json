@@ -1,0 +1,65 @@
+{
+  "Default": {
+    "Background": [16,16,19], "Inline": [21,21,24], "Tabs": [26,26,29],
+    "SubTab": [39,38,42], "Text": [184,182,185], "InactiveText": [117,116,122],
+    "Element": [34,34,38], "Outline": [28,28,32], "Outline2": [40,40,44],
+    "Accent": [169,169,169], "HoveredElement": [40,40,45],
+    "Section": [24,22,25], "Inline2": [30,29,32]
+  },
+  "Tokyo": {
+    "Background": [22,22,31], "Inline": [25,25,37], "Tabs": [28,28,42],
+    "SubTab": [37,37,56], "Text": [232,232,240], "InactiveText": [140,140,165],
+    "Element": [31,31,48], "Outline": [40,40,58], "Outline2": [50,50,70],
+    "Accent": [103,89,179], "HoveredElement": [45,45,65],
+    "Section": [24,24,36], "Inline2": [29,29,42]
+  },
+  "Nord": {
+    "Background": [46,52,64], "Inline": [52,60,74], "Tabs": [59,66,82],
+    "SubTab": [67,76,94], "Text": [236,239,244], "InactiveText": [180,188,200],
+    "Element": [76,86,106], "Outline": [59,66,82], "Outline2": [67,76,94],
+    "Accent": [136,192,208], "HoveredElement": [81,91,112],
+    "Section": [52,60,74], "Inline2": [64,72,90]
+  },
+  "Dracula": {
+    "Background": [40,42,54], "Inline": [48,50,66], "Tabs": [55,58,77],
+    "SubTab": [68,71,90], "Text": [248,248,242], "InactiveText": [180,180,180],
+    "Element": [58,61,80], "Outline": [44,46,60], "Outline2": [68,71,90],
+    "Accent": [189,147,249], "HoveredElement": [70,73,95],
+    "Section": [50,52,68], "Inline2": [58,60,78]
+  },
+  "Arctic": {
+    "Background": [235,235,240], "Inline": [245,245,250], "Tabs": [225,225,232],
+    "SubTab": [210,210,220], "Text": [40,40,45], "InactiveText": [110,110,120],
+    "Element": [235,235,238], "Outline": [180,180,190], "Outline2": [200,200,210],
+    "Accent": [120,170,255], "HoveredElement": [220,220,228],
+    "Section": [240,240,245], "Inline2": [230,230,238]
+  },
+  "Ubuntu": {
+    "Background": [48,10,36], "Inline": [60,15,45], "Tabs": [72,20,54],
+    "SubTab": [85,25,65], "Text": [255,245,235], "InactiveText": [210,180,170],
+    "Element": [70,18,52], "Outline": [40,8,30], "Outline2": [90,28,70],
+    "Accent": [233,84,32], "HoveredElement": [95,32,75],
+    "Section": [55,14,42], "Inline2": [65,18,50]
+  },
+  "Gruvbox": {
+    "Background": [29,32,33], "Inline": [40,40,40], "Tabs": [50,48,47],
+    "SubTab": [60,56,54], "Text": [235,219,178], "InactiveText": [168,153,132],
+    "Element": [60,56,54], "Outline": [80,73,69], "Outline2": [102,92,84],
+    "Accent": [250,189,47], "HoveredElement": [70,65,61],
+    "Section": [40,40,40], "Inline2": [50,48,47]
+  },
+  "Everforest": {
+    "Background": [35,38,41], "Inline": [45,50,47], "Tabs": [55,60,57],
+    "SubTab": [65,70,67], "Text": [211,198,170], "InactiveText": [160,148,126],
+    "Element": [55,60,57], "Outline": [70,75,72], "Outline2": [85,90,87],
+    "Accent": [163,190,140], "HoveredElement": [75,80,77],
+    "Section": [45,50,47], "Inline2": [52,57,54]
+  },
+  "Rose Pine": {
+    "Background": [25,23,36], "Inline": [31,29,46], "Tabs": [38,35,58],
+    "SubTab": [49,45,74], "Text": [224,222,244], "InactiveText": [144,140,170],
+    "Element": [42,39,63], "Outline": [57,53,82], "Outline2": [68,65,95],
+    "Accent": [235,188,186], "HoveredElement": [52,49,78],
+    "Section": [31,29,46], "Inline2": [38,35,58]
+  }
+}
