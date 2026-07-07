@@ -13,14 +13,14 @@
 
 cloneref = cloneref or function(x) return x end
 
--- No, i will not make variables for services..
+-- No, i will not make variables for services :3
 repeat task.wait() until game:IsLoaded() and cloneref(game:GetService("ContentProvider")).RequestQueueSize <= 10
 
 cloneref(game:GetService("Players")).LocalPlayer.Idled:Connect(function()
     cloneref(game:GetService("VirtualUser")):ClickButton2(Vector2.new())
 end)
 
-if readfile("IceWare/Version.txt") == "V1.0.0" then
+if isfile("IceWare/Version.txt") and readfile("IceWare/Version.txt") == "V1.0.0" then
     delfolder("IceWare")
 end
 
@@ -29,6 +29,8 @@ local shared = {
     folders = {
         main = 'IceWare',
         games = 'IceWare/Games',
+        keysystem = 'IceWare/Key System',
+        assets = 'IceWare/Assets',
     };
 }
 
@@ -53,7 +55,7 @@ for ids, url in next, games do
             loadstring(game:HttpGet(url))()
         end)
         if not ok then
-            --warn("Failed 2 load" .. err) -- fuck u
+            --warn("Failed 2 load" .. err)
         end
     end
 end
