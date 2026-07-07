@@ -54,8 +54,5 @@ for ids, url in next, games do
         local ok, err = pcall(function()
             loadstring(game:HttpGet(url))()
         end)
-        if not ok then
-            --warn("Failed 2 load" .. err)
-        end
     end
 end
