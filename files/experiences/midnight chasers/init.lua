@@ -5,4 +5,4 @@ end
 
 local key = loadstring(game:HttpGet("https://raw.githubusercontent.com/Iceware-RBLX/rewrite/refs/heads/main/files/storage/key.lua"))()
 
-key:Create("bb0ddec488ffaaa951b239c94d320547")
+key:Create("cd43aea36ab7414b554c79b69814fbcc")
