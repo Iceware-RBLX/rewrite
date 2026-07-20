@@ -47,6 +47,7 @@ local games = {
     [{13822562292, 139048751758942, 133327835421432, 121510074321001}] = "https://raw.githubusercontent.com/Iceware-RBLX/rewrite/refs/heads/main/files/experiences/midnight%20chasers/init.lua", -- Midnight Chasers
     [{3351674303, 71775212858107}] = "https://raw.githubusercontent.com/Iceware-RBLX/rewrite/refs/heads/main/files/experiences/driving%20empire/init.lua", -- Driving Empire
     [{1554960397}] = "https://raw.githubusercontent.com/Iceware-RBLX/rewrite/refs/heads/main/files/experiences/car%20dealership%20tycoon/init.lua", -- Car Dealership Tycoon
+    [{891852901}] = "https://raw.githubusercontent.com/Iceware-RBLX/rewrite/refs/heads/main/files/experiences/greenville/init.lua", -- Greenville
 }
 
 for ids, url in next, games do
