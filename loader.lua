@@ -34,7 +34,7 @@ local shared = {
     };
 }
 
-for _, folder in next, shared.folders do
+for _, folder in shared.folders do
     if not isfolder(folder) then
         makefolder(folder)
     end
@@ -52,7 +52,7 @@ local games = {
     [{137228775845999}] = "https://raw.githubusercontent.com/Iceware-RBLX/rewrite/refs/heads/main/files/experiences/ghost%20driver/init.lua", -- Ghost Driver
 }
 
-for ids, url in next, games do
+for ids, url in games do
     if table.find(ids, game.PlaceId) then
         local ok, err = pcall(function()
             loadstring(game:HttpGet(url))()
